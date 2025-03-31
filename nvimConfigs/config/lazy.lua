@@ -54,3 +54,10 @@ require("lazy").setup({
 
 -- setup must be called before loading
 vim.cmd.colorscheme("carbonfox")
+
+-- LSP extra 
+autocmd BufNewFile,BufRead *.sql set filetype=cpp
+
+-- Extra shortcuts
+nnoremap <silent> <F3> :BufferLineCyclePrev<CR>
+nnoremap <silent> <F4> :BufferLineCycleNext<CR>
