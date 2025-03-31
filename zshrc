@@ -103,7 +103,6 @@ zplugin light zsh-users/zsh-autosuggestions
 
 export NODE_OPTIONS="--max_old_space_size=13000"
 export export NODE_ENV=development
-export GRAPHITE_SOURCEMAP=inline-source-map
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #ALIAS
