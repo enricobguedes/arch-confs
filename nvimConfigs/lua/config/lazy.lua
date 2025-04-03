@@ -55,6 +55,4 @@ require("lazy").setup({
 -- setup must be called before loading
 vim.cmd.colorscheme("carbonfox")
 
--- LSP additional
---
-vim.filetype.add({ filename = { ["*.sqf"] = "cpp" } })
+vim.g.bigfile_size = 1024 * 1024 * 1 -- 1M
