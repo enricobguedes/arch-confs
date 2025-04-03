@@ -54,5 +54,20 @@ require("lazy").setup({
 
 -- setup must be called before loading
 vim.cmd.colorscheme("carbonfox")
+local isOpenTerm = false
+local toggleTerm = function()
+  if isOpenTerm then
+    vim.api.nvim_win_close(0, false)
+    isOpenTerm = false
+  else
+    vim.cmd.vnew()
+    vim.cmd.term()
+    vim.cmd.wincmd("J")
+    vim.cmd("startinsert")
+    vim.api.nvim_win_set_height(0, 15)
+    isOpenTerm = true
+  end
+end
 
-vim.g.bigfile_size = 1024 * 1024 * 1 -- 1M
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
+vim.keymap.set("n", "<space>tt", toggleTerm)
