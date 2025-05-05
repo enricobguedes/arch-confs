@@ -1,0 +1,14 @@
+[Desktop Entry]
+DefaultProfile=ebg.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+MenuBar=Disabled
+
+[MainWindow][Toolbar sessionToolbar]
+IconSize=16
+
+[Toolbar sessionToolbar]
+IconSize=16

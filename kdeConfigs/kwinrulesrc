@@ -1,0 +1,21 @@
+[96bf7c2f-1790-4477-8761-01438eb689a7]
+Description=Window settings for konsole
+clientmachine=localhost
+title=~ : zsh — Konsole
+types=4
+windowrole=MainWindow#1
+windowrolematch=1
+wmclass=konsole
+wmclassmatch=1
+
+[General]
+count=2
+rules=ec00a9ca-7794-4a75-a560-f3ed83aa573a,96bf7c2f-1790-4477-8761-01438eb689a7
+
+[ec00a9ca-7794-4a75-a560-f3ed83aa573a]
+Description=Application settings for konsole
+clientmachine=localhost
+noborder=true
+noborderrule=3
+wmclass=konsole
+wmclassmatch=1
